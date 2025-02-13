@@ -1,4 +1,7 @@
-* {
+:not(textarea),
+:not(code),
+:not(tt),
+:not(pre) {
   &,
   &:first-child,
   &:last-child * {
@@ -8,7 +11,7 @@
       &,
       &:first-child,
       &:last-child * {
-        font-family: "Noto Sans Condensed", "Open Sans", sans-serif;
+        font-family: "Noto Sans Condensed", "Open Sans", "sans-serif";
       }
     }
   }
@@ -30,7 +33,7 @@ pre {
         &:first-child,
         &:last-child * {
           font-family: "VictorMono Nerd Font", "Consolas", "Courier New",
-            monospace !important;
+            "monospace" !important;
           font-size: 0.75rem;
           line-height: 1.5;
         }
