@@ -1,0 +1,50 @@
+* {
+  &,
+  &:first-child,
+  &:last-child * {
+    &,
+    &:first-child,
+    &:last-child * {
+      &,
+      &:first-child,
+      &:last-child * {
+        font-family: "Noto Sans Condensed", "Open Sans", sans-serif;
+      }
+    }
+  }
+}
+
+textarea,
+code,
+tt,
+pre {
+  &,
+  * {
+    &,
+    &:first-child,
+    &:last-child * {
+      &,
+      &:first-child,
+      &:last-child * {
+        &,
+        &:first-child,
+        &:last-child * {
+          font-family: "VictorMono Nerd Font", "Consolas", "Courier New",
+            monospace !important;
+          font-size: 0.75rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.post-text,
+.wmd-preview {
+  ul,
+  ol {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}
